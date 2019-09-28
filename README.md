@@ -22,6 +22,15 @@ ___
 * Accepting the recommended box takes the user to the checkout page
 
 
+
+## Steps to run
+
+* Download the zip/repo
+
+* Open the folder in the latest Android Studio IDE
+
+* Build & run oon Android device
+
 ---
 
 Beneficiary/User segment-
