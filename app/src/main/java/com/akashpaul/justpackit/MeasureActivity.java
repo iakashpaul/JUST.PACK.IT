@@ -272,7 +272,7 @@ public class MeasureActivity extends Activity {
 //                        updateDistance();
 //                    }
 
-                        if (counter < 3) {
+                        if (counter <= 3) {
 
 //                            save to side variable
                             Log.d("BIN_PACK", "Distance, "+distance+" of Edge "+counter);
