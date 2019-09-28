@@ -22,7 +22,7 @@ ___
 * Accepting the recommended box takes the user to the checkout page
 
 
-[![Demo video](https://img.youtube.com/vi/W8U1uAzXOFc/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![Demo video](https://img.youtube.com/vi/W8U1uAzXOFc/0.jpg)](https://www.youtube.com/watch?v=W8U1uAzXOFc)
 
 
 
