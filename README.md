@@ -25,21 +25,27 @@ ___
 ---
 
 Beneficiary/User segment-
-* ** The shipper of the parcel**
+
+* **The shipper of the parcel**
 
 How it helps the beneficiary/user segment- 
+
 * **Allows them to choose the best option for shipping their parcel**
 
-The impact that the solution would create; the impact metrics that one can use to analyze the effect of the solution
+The impact that the solution would create; the impact metrics that one can use to analyze the effect of the solution-
+
 * **Pitney Bowes can measure the weight of a crate/container filled with non-optimised packaging & optimised packaging over a short period of time & determine how much more value per crate/container this optimisation delivers**
 
 Time to make a prototype-
-* ** A full day's time**
+
+* **A full day's time**
 
 Frameworks/Technologies and APIs to be used-
+
 * **ARCore for Android, Android Studio, Linear programming library for optimal solution of volume/box from given dimension constraints**
 
 Assumptions, Constraints-
+
 * **Parcel is a box, or I could actually ask the user is it is a box-item or a document & suggest an alternative type of packaging**
 
 Effectiveness of the solution in solving the problem defined and ease of implementation-
