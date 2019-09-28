@@ -41,6 +41,7 @@ public class MeasureActivity extends Activity {
     private static final String TAG = MeasureActivity.class.getSimpleName();
 
     private TextView mTextView;
+    private TextView mSideTextView;
     private GLSurfaceView mSurfaceView;
     private MainRenderer mRenderer;
 
@@ -55,6 +56,7 @@ public class MeasureActivity extends Activity {
     private float mLastY;
     private boolean mPointAdded = false;
 
+    public int counter=0;
     //save Check
     private Boolean isSaveClick = false;
 
@@ -63,6 +65,8 @@ public class MeasureActivity extends Activity {
         super.onCreate(savedInstanceState);
         hideStatusBarAndTitleBar();
         setContentView(R.layout.activity_measure);
+
+        mSideTextView = (TextView) findViewById(R.id.side_txt_dist);
 
         mTextView = (TextView) findViewById(R.id.txt_dist);
         mSurfaceView = (GLSurfaceView) findViewById(R.id.gl_surface_view);
@@ -250,12 +254,31 @@ public class MeasureActivity extends Activity {
                         totalDistance += distance;
                     }
                 }
-                String distanceString = String.format(Locale.getDefault(), "%.2f", totalDistance)
-                        + getString(R.string.txt_dist);
-                mTextView.setText(distanceString);
-            }
-        });
-    }
+                else {
+
+                    // Empty the points & save that counter to length of side
+//                    while (mPoints.isEmpty()) {
+                    mPoints.remove(mPoints.size() - 1);
+                    mRenderer.removePoint();
+                    mPoints.remove(mPoints.size() - 1);
+                    mRenderer.removePoint();
+//                        updateDistance();
+//                    }
+                    if (mPoints.size() % 2==0  ) {
+                        if (counter < 3) {
+                            counter = counter + 1;
+                        } else {
+                            counter = 0;
+                        }
+                    }
+                }
+                    String distanceString = String.format(Locale.getDefault(), "%.2f", totalDistance)
+                            + getString(R.string.txt_dist);
+                    mTextView.setText(distanceString);
+                    mSideTextView.setText("Measure edge number "+(counter+1));
+                }
+            });
+        }
 
     private void hideStatusBarAndTitleBar(){
         requestWindowFeature(Window.FEATURE_NO_TITLE);
