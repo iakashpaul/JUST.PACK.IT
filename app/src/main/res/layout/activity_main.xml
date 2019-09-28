@@ -6,67 +6,51 @@
     android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity"
-        android:orientation="vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="270dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="36dp"
-            android:layout_gravity="center"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ruler_logo" />
+        <TextView
+            style="@style/label_style"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Measure all three sides and then purchase the best box" />
+        <TextView
 
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="built by Akash Paul/Blitzkrieg" />
         <TableLayout
+            android:layout_marginTop="100dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:stretchColumns="*">
-            <TableRow>
-        <Button
-            android:id="@+id/btn_measure"
-            style="@style/button_style"
-            android:text="@string/btn_measure"
-            android:background="@drawable/button"
-            android:layout_marginRight="4dp"
-            android:layout_marginBottom="4dp"/>
 
-        <Button
-            android:id="@+id/btn_locate"
-            style="@style/button_style"
-            android:text="@string/btn_locate"
-            android:background="@drawable/button"
-            android:layout_marginLeft="4dp"
-            android:layout_marginBottom="4dp" />
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_measure"
+                    style="@style/button_style"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/button"
+                    android:text="@string/btn_measure" />
+
             </TableRow>
 
-        <TableRow>
-        <Button
-            android:id="@+id/btn_gallery"
-            style="@style/button_style"
-            android:text="@string/btn_gallery"
-            android:background="@drawable/button"
-            android:layout_marginRight="4dp"
-            android:layout_marginTop="4dp" />
-
-        <Button
-            android:id="@+id/btn_exit"
-            style="@style/button_style"
-            android:text="@string/exit"
-            android:background="@drawable/button"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp" />
-
-        </TableRow>
+            <TableRow />
         </TableLayout>
+
     </LinearLayout>
 <!--<GridLayout-->
     <!--android:layout_width="match_parent"-->

@@ -70,8 +70,9 @@ public class MeasureActivity extends Activity {
 //        Bin packing
         // initialization
         List<Container> containers = new ArrayList<Container>();
-        containers.add(new Container(10, 10, 3, 100)); // x y z and weight
-        Packager packager = new LargestAreaFitFirstPackager(containers);
+        containers.add(new Container("box",10, 5, 10, 10000)); // x y z and weight
+        boolean rotate3d = true;
+        Packager packager = new LargestAreaFitFirstPackager(containers, rotate3d, true, true);
 
         List<BoxItem> products = new ArrayList<BoxItem>();
         products.add(new BoxItem(new Box("Foot", 6, 10, 2, 25), 1));
@@ -80,8 +81,12 @@ public class MeasureActivity extends Activity {
 
 // match a single container
         Container match = packager.pack(products);
-
-        Log.d("BIN_PACK", "Matches, "+match.toString());
+        if(match != null){
+            Log.d("BIN_PACK", "Matches, "+match.getLevels().toString());
+        }
+        else{
+            Log.d("BIN_PACK", "No match found, ");
+        }
 
 
 

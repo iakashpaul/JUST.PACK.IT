@@ -17,7 +17,7 @@ ___
 
 * Then the app guides the user to rotate the object along its length, width & height & lets them measure the distance along each side by selecting the start & end vertices
 
-* Once all three sides are done the app calculates the volume & suggests the most suitable box from the listed boxes at https://www.pitneybowes.us/shop/ink-and-supplies/shipping-and-packing-supplies/mailing-boxes--cartons/en-us/storeus 
+* Once all three sides are done the app calculates the volume & suggests the most suitable box from the listed 18 boxes at https://www.pitneybowes.us/shop/ink-and-supplies/shipping-and-packing-supplies/mailing-boxes--cartons/en-us/storeus 
 
 * Accepting the recommended box takes the user to the checkout page
 
