@@ -56,7 +56,8 @@ public class MeasureActivity extends Activity {
     private float mLastY;
     private boolean mPointAdded = false;
 
-    public int counter=0;
+    public int counter=1;
+    public double distance;
     //save Check
     private Boolean isSaveClick = false;
 
@@ -241,13 +242,16 @@ public class MeasureActivity extends Activity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                if(counter<4){
+                mSideTextView.setText("Measure Edge Number "+(counter));
+                }
                 double totalDistance = 0.0;
                 if (mPoints.size() <= 2)  {
                     for (int i = 0; i < mPoints.size() - 1; i++) {
                         float[] start = mPoints.get(i);
                         float[] end = mPoints.get(i + 1);
 
-                        double distance = Math.sqrt(
+                         distance = Math.sqrt(
                                 (start[0] - end[0]) * (start[0] - end[0])
                                         + (start[1] - end[1]) * (start[1] - end[1])
                                         + (start[2] - end[2]) * (start[2] - end[2]));
@@ -255,6 +259,7 @@ public class MeasureActivity extends Activity {
                     }
                 }
                 else {
+//                    mTextView.setText("");
 
                     // Empty the points & save that counter to length of side
 //                    while (mPoints.isEmpty()) {
@@ -262,20 +267,26 @@ public class MeasureActivity extends Activity {
                     mRenderer.removePoint();
                     mPoints.remove(mPoints.size() - 1);
                     mRenderer.removePoint();
+                    mPoints.remove(mPoints.size() - 1);
+                    mRenderer.removePoint();
 //                        updateDistance();
 //                    }
-                    if (mPoints.size() % 2==0  ) {
+
                         if (counter < 3) {
+
+//                            save to side variable
+                            Log.d("BIN_PACK", "Distance, "+distance+" of Edge "+counter);
+
                             counter = counter + 1;
+
                         } else {
-                            counter = 0;
+                            counter = 1;
                         }
-                    }
                 }
                     String distanceString = String.format(Locale.getDefault(), "%.2f", totalDistance)
-                            + getString(R.string.txt_dist);
+                            + getString(R.string.txt_dist)+"\r\n"+"Tap again to measure next side";
                     mTextView.setText(distanceString);
-                    mSideTextView.setText("Measure edge number "+(counter+1));
+
                 }
             });
         }
