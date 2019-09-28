@@ -1,7 +1,7 @@
 
 TEAM- Blitzkrieg
 
-Name- Akash Paul
+Name- Akash Paul (https://www.hackerearth.com/@Blitzen)[https://www.hackerearth.com/@Blitzen]
 
 Problem statement-  Intelligent Parcel shipping/Tracking/Receiving using AI/ML-based techniques Visual recognition of parcel type and suggestive packing to reduce shipping cost and space.
 
