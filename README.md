@@ -50,5 +50,5 @@ Assumptions, Constraints-
 
 Effectiveness of the solution in solving the problem defined and ease of implementation-
 
-* **The presence of a ruler is obviously something that might render measuring using the ARCore's ML techniques useless, but coupled with the ease of simply tapping points on a screen & also finding the volume of box needed from available inventory is something best left to the app instead of back-of-the-napkin linear programming solutions for countless parcels throughout the day**
+* **The presence of a ruler is obviously something that might render measuring using the ARCore's ML techniques useless, but coupled with the ease of simply tapping points on a screen & also finding the volume of box needed from available inventory is something best left to the app instead of back-of-the-napkin knapsack solutions for countless parcels throughout the day**
 
