@@ -42,7 +42,7 @@ Time to make a prototype-
 
 Frameworks/Technologies and APIs to be used-
 
-* **ARCore for Android, Android Studio, Linear programming library for optimal solution of volume/box from given dimension constraints**
+* **ARCore for Android, Android Studio, packing constraint solver uses 3d-bin-container-packing library by [skjolber/3d-bin-container-packing/](https://github.com/skjolber/3d-bin-container-packing/)**
 
 Assumptions, Constraints-
 
