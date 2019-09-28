@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.akashpaul.justpackit.LocateActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_locate"
+            android:text="@string/not_selected"
+            android:textSize="30sp"
+            android:textColor="#ffff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/locate_rotate"
+            android:text="@string/txt_roate"
+            android:textSize="30sp"
+            android:textColor="#ff00FD00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/locate_scale"
+            android:text="@string/txt_scale"
+            android:textSize="30sp"
+            android:textColor="#ff00FD00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_capture_locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom|center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end">
+
+        <!--<Button-->
+            <!--android:layout_width="80sp"-->
+            <!--android:layout_height="50sp"-->
+            <!--android:text="@string/selected_complete"-->
+            <!--android:onClick="onSelectedButtonClicked"/>-->
+
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="50sp"
+            android:text="@string/table"
+            android:onClick="onTableButtonClicked"/>
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="50sp"
+            android:text="@string/chair"
+            android:onClick="onChairButtonClicked"/>
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="50sp"
+            android:text="@string/bed"
+            android:onClick="onBedButtonClicked"/>
+
+    </LinearLayout>
+
+</FrameLayout>

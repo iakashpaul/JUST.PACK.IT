@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akashpaul.justpackit">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ruler_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MeasureActivity"
+            android:label="@string/activity_measure_label">
+        </activity>
+
+        <activity android:name=".LocateActivity"
+            android:label="@string/activity_locate_label">
+        </activity>
+
+        <activity android:name=".GalleryActivity"
+            android:label="@string/activity_gallery_label">
+        </activity>
+        <activity android:name=".ManualActivity"
+            android:label="매뉴얼">
+        </activity>
+        <meta-data android:name="com.google.ar.core" android:value="required"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ruler.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+    </application>
+
+</manifest>
