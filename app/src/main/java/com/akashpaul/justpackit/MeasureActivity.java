@@ -42,6 +42,7 @@ public class MeasureActivity extends Activity {
 
     private TextView mTextView;
     private TextView mSideTextView;
+    private TextView mBoxTextView;
     private GLSurfaceView mSurfaceView;
     private MainRenderer mRenderer;
 
@@ -58,6 +59,9 @@ public class MeasureActivity extends Activity {
 
     public int counter=1;
     public double distance;
+    public double side_length_1;
+    public double side_length_2;
+    public double side_length_3;
     //save Check
     private Boolean isSaveClick = false;
 
@@ -68,6 +72,7 @@ public class MeasureActivity extends Activity {
         setContentView(R.layout.activity_measure);
 
         mSideTextView = (TextView) findViewById(R.id.side_txt_dist);
+        mBoxTextView = (TextView) findViewById(R.id.box_txt_dist);
 
         mTextView = (TextView) findViewById(R.id.txt_dist);
         mSurfaceView = (GLSurfaceView) findViewById(R.id.gl_surface_view);
@@ -276,6 +281,20 @@ public class MeasureActivity extends Activity {
 
 //                            save to side variable
                             Log.d("BIN_PACK", "Distance, "+distance+" of Edge "+counter);
+                            if(counter==1){
+                                side_length_1=distance;
+                            }
+                            if(counter==2){
+                                side_length_2=distance;
+                            }
+                            if(counter==3){
+                                side_length_3=distance;
+                                double volume=side_length_1*side_length_2*side_length_3;
+                                mBoxTextView.setText("Volume "+String.format(Locale.getDefault(), "%.7f", volume)+"m3");
+
+                            }
+
+
 
                             counter = counter + 1;
 
