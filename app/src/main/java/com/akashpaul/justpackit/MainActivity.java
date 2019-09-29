@@ -20,6 +20,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 //    Button btn_locate;
 //    Button btn_gallery;
 //    Button btn_exit;
+
 
 
     @Override
@@ -157,21 +160,19 @@ public class MainActivity extends AppCompatActivity {
                 try{
                     Bundle b = data.getExtras();
                     Double stage_value = b.getDouble("stage_value");
-                    Toast.makeText(getApplicationContext(),"Volume "+stage_value, Toast.LENGTH_LONG).show();
-                    Log.d("MainActivity ",stage_value.toString());
-                    mTextView.setText("\n Your parcel's volume is "+stage_value.toString()+" \n We recommend this box for shipping ");
-//                    switch (image_type) {
-//
-//                    }
-//            mPreview.setImageType(imageType);
-//            Log.d("stage","Got bundle "+b);
-                    if (b.getBoolean("EXIT")== true) {
+                    String volume = String.format(Locale.getDefault(), "%.2f", stage_value);
+                    Toast.makeText(getApplicationContext(),"Volume "+volume, Toast.LENGTH_LONG).show();
+                    Log.d("MainActivity ",volume);
 
-                    }
-                    else{
+                    int index = b.getInt("index");
+                    int width = b.getInt("width");
+                    int depth = b.getInt("depth");
+                    int height = b.getInt("height");
+                    String url="";
 
 
-                    }
+                    mTextView.setText("\n Your parcel's volume is "+volume+" cubic inch \n We recommend this "+width+"x"+depth+"x"+height+"(Inches) box for shipping available at \n "+url);
+
                 } catch(Exception ex){
 
                     Log.d("stage","CA - No bundle ");
