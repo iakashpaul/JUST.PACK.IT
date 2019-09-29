@@ -33,7 +33,7 @@ ___
 
 * Open the folder in the latest Android Studio IDE
 
-* Build & run oon Android device
+* Build & run on an Android device
 
 ---
 

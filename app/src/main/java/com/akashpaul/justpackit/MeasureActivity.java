@@ -1,6 +1,7 @@
 package com.akashpaul.justpackit;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.hardware.display.DisplayManager;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.skjolber.packing.Box;
 import com.github.skjolber.packing.BoxItem;
@@ -80,14 +82,16 @@ public class MeasureActivity extends Activity {
 //        Bin packing
         // initialization
         List<Container> containers = new ArrayList<Container>();
-        containers.add(new Container("box",10, 5, 10, 10000)); // x y z and weight
+        containers.add(new Container("box",100, 100, 100, 10000)); // x y z and weight
+
+
         boolean rotate3d = true;
         Packager packager = new LargestAreaFitFirstPackager(containers, rotate3d, true, true);
 
         List<BoxItem> products = new ArrayList<BoxItem>();
-        products.add(new BoxItem(new Box("Foot", 6, 10, 2, 25), 1));
-        products.add(new BoxItem(new Box("Leg", 4, 10, 1, 25), 1));
-        products.add(new BoxItem(new Box("Arm", 4, 10, 2, 50), 1));
+        products.add(new BoxItem(new Box("Foot", 20, 11, 7, 25), 1));
+//        products.add(new BoxItem(new Box("Leg", 4, 10, 1, 25), 1));
+//        products.add(new BoxItem(new Box("Arm", 4, 10, 2, 50), 1));
 
 // match a single container
         Container match = packager.pack(products);
@@ -242,6 +246,12 @@ public class MeasureActivity extends Activity {
             updateDistance();
         }
     }
+    public void onExitButtonClick(View view){
+        Intent intent = new Intent();
+        intent.putExtra("stage_value", 0);
+        setResult(RESULT_OK,intent);
+        finish();
+    }
 
     public void updateDistance() {
         runOnUiThread(new Runnable() {
@@ -291,7 +301,11 @@ public class MeasureActivity extends Activity {
                                 side_length_3=distance;
                                 double volume=side_length_1*side_length_2*side_length_3;
                                 mBoxTextView.setText("Volume "+String.format(Locale.getDefault(), "%.7f", volume)+"m3");
-
+                                Toast.makeText(getApplicationContext(),"Volume "+String.format(Locale.getDefault(), "%.7f", volume)+"m3", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent();
+                                intent.putExtra("stage_value", volume);
+                                setResult(RESULT_OK,intent);
+                                finish();
                             }
 
 
