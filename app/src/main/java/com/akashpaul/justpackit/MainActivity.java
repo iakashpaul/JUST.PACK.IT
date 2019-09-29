@@ -169,9 +169,29 @@ public class MainActivity extends AppCompatActivity {
                     int depth = b.getInt("depth");
                     int height = b.getInt("height");
                     String url="";
+                    String[] urls={ "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-18x18x18-slm181818/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-6x6x4-slm664/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-1114x834x12-slmhd11812/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-1214x914x10-slmhd12910/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-1714x1114x10-slmhd171110/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-20x20x20-slmhd202020dw/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-24x24x24-slmhd2424dw/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-24x18x934-slmj24/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-22x15x13-slmj64/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-1114x834x6-slmmd1186/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-12x9x6-slmmd1296/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-1714x1114x12-slmmd171112/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-18x12x12-slmmd181212/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-16x16x16-slm161616/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-14x14x14-slm141414/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-12x12x12-slm121212/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-10x8x6-slm1086/en-us/storeus?parentCategoryId=77564",
+                    "https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-18x13x912-slmj20/en-us/storeus?parentCategoryId=77564"};
+if (stage_value!=0){url=urls[index];
+    mTextView.setText("\n Your parcel's volume is "+volume+" cubic inch \n We recommend this "+width+"x"+depth+"x"+height+"(Inches) box for shipping available at \n "+url);}
+else{url="No matching box found :(";
+    mTextView.setText("\n Your parcel's volume is "+volume+" cubic inch \n \n "+url);}
 
-
-                    mTextView.setText("\n Your parcel's volume is "+volume+" cubic inch \n We recommend this "+width+"x"+depth+"x"+height+"(Inches) box for shipping available at \n "+url);
 
                 } catch(Exception ex){
 

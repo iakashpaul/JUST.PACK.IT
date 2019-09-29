@@ -68,9 +68,9 @@ public class MeasureActivity extends Activity {
     public int lowest_index=-1;
     public int lowest_volume=0;
 
-    public int width=0;
-    public int depth=0;
-    public int height=0;
+    public int width_lowest=0;
+    public int depth_lowest=0;
+    public int height_lowest=0;
     //save Check
     private Boolean isSaveClick = false;
 
@@ -368,9 +368,9 @@ public class MeasureActivity extends Activity {
                                     for (int i=0;i<box_list.size();i++){
                                         List<Container> containers_dynamic = new ArrayList<Container>();
 //        containers.add(new Container("box",1, 100, 100, 10000)); // x y z and weight
-                                        width=(int) box_list.get(i)[0];
-                                        depth=(int) box_list.get(i)[1];
-                                        height=(int) box_list.get(i)[2];
+                                        int width=(int) box_list.get(i)[0];
+                                       int depth=(int) box_list.get(i)[1];
+                                       int height=(int) box_list.get(i)[2];
                                         containers_dynamic.add(new Container("box",width, depth, height, 10000)); // x y z and weight
                                         Log.d("BIN_PACK", "Trying for "+(i+1)+" WxDxH "+width+"x"+ depth+"x"+ height);
                                         boolean rotate3d = true;
@@ -386,6 +386,9 @@ public class MeasureActivity extends Activity {
                                                 lowest_index = i;
                                                 lowest_volume=(int) match.getVolume();
                                                 Log.d("BIN_PACK", "Lowest Index yet, "+lowest_index);
+                                                width_lowest=width;
+                                                depth_lowest=depth;
+                                                height_lowest=height;
                                             }
                                         }
                                         else{
@@ -396,9 +399,9 @@ public class MeasureActivity extends Activity {
                                 Intent intent = new Intent();
                                 intent.putExtra("stage_value", volume);
                                 intent.putExtra("index", lowest_index);
-                                intent.putExtra("width", width);
-                                intent.putExtra("depth", depth);
-                                intent.putExtra("height", height);
+                                intent.putExtra("width", width_lowest);
+                                intent.putExtra("depth", depth_lowest);
+                                intent.putExtra("height", height_lowest);
 
                                 setResult(RESULT_OK,intent);
                                 finish();

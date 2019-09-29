@@ -1,7 +1,18 @@
-2019-09-28 20:54:30.422 32103-32103/com.akashpaul.justpackit D/BIN_PACK: Distance, 0.2028653429251387 of Edge 1  7.98
-2019-09-28 20:54:37.980 32103-32103/com.akashpaul.justpackit D/BIN_PACK: Distance, 0.11911645237577051 of Edge 2    4.68
-2019-09-28 20:54:55.913 32103-32103/com.akashpaul.justpackit D/BIN_PACK: Distance, 0.07030562194985734 of Edge 3    2.76
-
-<!--                    android:background="@drawable/button"-->
-
-<!--                android:background="@drawable/button"-->
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-18x18x18-slm181818/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-6x6x4-slm664/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-1114x834x12-slmhd11812/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-1214x914x10-slmhd12910/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-1714x1114x10-slmhd171110/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-20x20x20-slmhd202020dw/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/heavy-duty-brown-corrugated-shipping-boxes-24x24x24-slmhd2424dw/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-24x18x934-slmj24/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-22x15x13-slmj64/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-1114x834x6-slmmd1186/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-12x9x6-slmmd1296/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-1714x1114x12-slmmd171112/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/multi-depth-brown-corrugated-shipping-boxes-18x12x12-slmmd181212/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-16x16x16-slm161616/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-14x14x14-slm141414/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-12x12x12-slm121212/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-10x8x6-slm1086/en-us/storeus?parentCategoryId=77564
+https://www.pitneybowes.us/shop/ink-and-supplies/brown-corrugated-shipping-boxes-18x13x912-slmj20/en-us/storeus?parentCategoryId=77564
