@@ -11,6 +11,14 @@ ___
 
 ### This is an android app which lets the user measure their parcel & suggest them the best fitting & cheapest box for shipping. Thereby saving the shipper packaging costs & enabling Pitney Bowes to earn & ship more packages due to optimized packaging in the same crate/container.
 
+## APK file
+
+APK file is present in the root of this directory & also inside the build/output folders
+
+(app.apk)[https://github.com/iakashpaul/JUST.PACK.IT/blob/master/app-debug.apk]
+
+Drive link https://drive.google.com/file/d/1hjHI6mZFECEkMKNWoIJkpxtRw9P3BNXp/view?usp=sharing
+
 ## User-flow
 
 * The app asks the user to place the object on any flat surface
@@ -23,7 +31,7 @@ ___
 
 * YouTube demo video 
 
-[![Demo video](https://img.youtube.com/vi/W8U1uAzXOFc/0.jpg)](https://www.youtube.com/watch?v=W8U1uAzXOFc)
+[![Demo video](https://img.youtube.com/vi/cuvo3zRXSEg/0.jpg)](https://www.youtube.com/watch?v=cuvo3zRXSEg)
 
 
 
